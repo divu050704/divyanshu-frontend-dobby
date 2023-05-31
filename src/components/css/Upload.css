@@ -1,0 +1,30 @@
+.Upload> label{
+
+  text-align: left;
+  color: #4A4453;
+  font-size: x-large;
+  margin-bottom: 0.5rem;
+
+}
+.Upload > input {
+  border: 1px solid #7E6EA0;
+  background-color: rgba(248, 235, 255,0.3);
+  padding: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #7E6EA0;
+}
+.Upload > button {
+  border: none;
+  background-color: #B799FF;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.Upload > button:hover{
+  opacity: 1;
+}

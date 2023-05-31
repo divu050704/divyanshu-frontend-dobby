@@ -1,0 +1,45 @@
+.LoginSignup{
+  text-align: center;
+  vertical-align: center;
+}
+.navbar{
+  background-color: #B799FF;
+  color: white;
+  font-size: 2rem;
+  padding: 0.75rem 0 0.75rem 0;
+  margin-bottom: 10%;
+}
+.LoginSignup > label{
+  text-align: left;
+  color: #4A4453;
+  font-size: x-large;
+  margin-bottom: 0.5rem;
+}
+.LoginSignup > input {
+  border: 1px solid #7E6EA0;
+  background-color: rgba(248, 235, 255,0.3);
+  padding: 0.2rem;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #7E6EA0;
+}
+.LoginSignup > input:focus{
+  outline: #7E6EA0
+}
+.LoginSignup > button{
+  border: none;
+  background-color: #B799FF;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.LoginSignup > font{
+  color: #4A4453;
+}
+.LoginSignup > font > span{
+  color: #B799FF;
+  cursor: pointer;
+  opacity: 0.8;
+}
