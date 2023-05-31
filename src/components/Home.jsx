@@ -3,6 +3,7 @@ import "./css/Home.css"
 
 export default function Home(props){
   const [data,setData] = React.useState([])
+  const [search,setSearch] = React.useState("")
   React.useEffect(() => {
     async function get(){
       const d = await fetch("https://divyanshu-backend-dobby.divu050704.repl.co/data",{credentials: "include"})
@@ -12,6 +13,9 @@ export default function Home(props){
     get()
   },[])
   const images = data.map((element) => {
+    let reg = new RegExp(`${search}`, 'gi')
+    // testing the values
+    if (reg.test(element.name))
     return(
       <div key={element._id} >
         <p>{element.name}</p>
@@ -29,6 +33,7 @@ export default function Home(props){
         .then(() => window.location.reload())
       }} >Logout</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       <button onClick={props.handleUploadOpen}>Upload</button><br />
+      <input type="text" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search"/><br />
       {images}
     </div>
   )

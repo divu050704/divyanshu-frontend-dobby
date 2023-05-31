@@ -11,3 +11,15 @@
 .Home > button:hover{
   opacity: 1;
 }
+.Home > input{
+  margin-top: 1rem;
+  border: 1px solid #7E6EA0;
+  background-color: rgba(248, 235, 255,0.3);
+  padding: 0.2rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #7E6EA0;
+}
+.Home > input:focus{
+  outline: none;
+}
